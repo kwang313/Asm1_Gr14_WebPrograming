@@ -1,0 +1,122 @@
+:root {
+  /* Colors */
+  --font-white: #f5f5f5;
+  --font-black: #000000;
+
+  /* Font */
+  --title-font: "Chivo";
+  --text-font: "Overpass";
+
+  /* Font Size */
+  --font-extreme: 2.5em;
+  --font-large: 1.125rem;
+  --font-medium: 0.875rem;
+  --font-small: 0.75rem;
+  --font-micro: 0.625rem;
+
+  /* Size */
+  --all-side-margin: 0.8rem;
+  --aboutUs-box-height: 25%;
+  --aboutUs-box-width: 40vw;
+  --padding: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/*About Us*/
+
+#mainAboutUs {
+  margin: 0 var(--all-side-margin);
+}
+
+#mainAboutUs article {
+  display: flex;
+  justify-content: center;
+}
+
+#mainAboutUs article > section,
+.con {
+  height: var(--aboutUs-box-height);
+  width: var(--aboutUs-box-width);
+}
+
+#mainAboutUs article section {
+  color: var(--font-black);
+  font-family: var(--text-font);
+  display: block;
+  padding: var(--padding);
+}
+
+#mainAboutUs article > .con {
+  position: relative;
+}
+
+#mainAboutUs article .con > img {
+  height: var(--aboutUs-box-height);
+  width: var(--aboutUs-box-width);
+}
+
+#mainAboutUs article .con p {
+  color: var(--font-white);
+  font-family: var(--title-font);
+  font-size: var(--font-extreme);
+  position: absolute;
+  top: 80%;
+  left: 2%;
+  z-index: 1;
+}
+
+#mainAboutUs article #secFir {
+  background-color: pink;
+}
+
+#mainAboutUs article #secSec {
+  background-color: skyblue;
+}
+
+#mainAboutUs article #secThr {
+  background-color: yellowgreen;
+}
+
+#mainAboutUs article #secFor {
+  background-color: orange;
+}
+
+/*Copyright, Tos, Privacy Policy*/
+h1,
+h2 {
+  font-family: var(--title-font);
+}
+
+p {
+  font-family: var(--text-font);
+  margin: 1rem 3rem;
+}
+
+ul {
+  margin: 2rem;
+  margin-left: 4rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  font-family: var(--text-font);
+  font-size: 1rem;
+}
+
+main {
+  margin: 0 20vw;
+}
+
+main h1 {
+  margin: 1rem 0;
+  margin-left: 1rem;
+}
+
+main h2 {
+  margin-left: 2rem;
+}
